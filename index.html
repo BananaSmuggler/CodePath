@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+  </head>
+  <style>
+    h1 {text-align: center;}
+    h3 {text-align: right;}
+    h4 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+  </style>
+  
+  
+  
+  <body>
+    <h1>Bubble Bass</h1>
+    <h4>
+      Welcome to Bubble Bass!
+    </h4>
+    <p>
+      To play, repeat back the pattern by pressing the buttons.
+    </p>
+
+    <div id="startstopbtn">
+      <button id="startBtn" onclick="startGame(1)"> Start</button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()"> Stop</button> 
+    </div>   
+    
+    <div id="gameButtonArea">
+      <button id="btn1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="btn2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="btn3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="btn4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+    </div>
+    
+    <h3>
+      <a href="https://youtu.be/dQw4w9WgXcQ">Click here for a suprise!</a>
+    </h3>
+  </body>
+</html>
